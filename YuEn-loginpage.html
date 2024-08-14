@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>APU FitNutri Log In</title>
+    <style>
+        .auto-style1 {
+            margin-top: 0%;
+        }
+
+        .auto-style2 {
+            font-size: 65px;
+            color: #FF7200;
+        }
+    </style>
+</head>
+
+<body style="background-color:#f5f0ea">
+     <div class="content" style="left: -28px; top: 33px; height: 917px">
+        <h1 class="auto-style1">Welcome back to <br>
+            <span class="auto-style2">APU FitNutri</span>
+        </h1>
+        <p class="par"><strong>Remember, every step you take brings you closer to the best version of yourself. <br>
+                Once again, welcome back to APU FitNutri, <br> where your journey to a healthier happier you begins!
+            </strong> </p>
+        <p class="par"></p>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp; Don't have an account, sign up by clicking "Join Us"<br> <br>&nbsp;&nbsp;&nbsp;&nbsp; Return to APU FitNutri Homepage, by clicking the "Homepage"<br><br></strong>
+        
+
+        <button class="cn"><a href="YuEn-signpage.html">JOIN US</a></button>
+        <button class="cn"><a href="YuEn-homepagenewuser.html">Homepage</a></button>
+
+        <div class="login-box" style="left: 37%; top: 6%; right: -400px;">
+            <h2>APU FitNutri Log In</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" id="tpNumber" required="">
+                    <label>TP Number (TPXXXXXX) : </label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password: </label>
+                </div>
+                <a href="#" id="loginBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Log In
+                </a>
+            </form>
+            <div id="errorMessageBox" class="error-message-box" style="display: none;">
+                <p>Invalid TP number format. Please enter a valid TP number (TPXXXXXX).</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bar">
+    	<br><br><br>
+       
+        <p style="height: 49px"> Copyright © 2024 APU FitNutri. All rights reserved.</p>
+    </div>
+<script>
+        // Get the input field
+        const tpNumberInput = document.getElementById('tpNumber');
+        // Get the error message box element
+        const errorMessageBox = document.getElementById('errorMessageBox');
+        // Get the login button element
+        const loginBtn = document.getElementById('loginBtn');
+
+        // Add an event listener for input validation
+        tpNumberInput.addEventListener('input', function () {
+            // Define a regular expression pattern for the TP number format
+            const tpPattern = /^TP\d{6}$/;
+
+            // Check if the input value matches the pattern
+            if (!tpPattern.test(this.value)) {
+                // If the input is invalid, add an error class or message
+                this.classList.add('error');
+            } else {
+                // If the input is valid, remove the error class or message
+                this.classList.remove('error');
+            }
+        });
+
+        // Add an event listener for the 'Log In' button click
+        loginBtn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            // Check if the TP number is valid
+            const tpPattern = /^TP\d{6}$/;
+            if (!tpPattern.test(tpNumberInput.value)) {
+                // If the TP number is invalid, show the error message box
+                errorMessageBox.style.display = 'block';
+            } else {
+                // If the TP number is valid, proceed with the login process
+                // Add your login logic here
+                window.location.href = 'YuEn-homepagenewuser.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

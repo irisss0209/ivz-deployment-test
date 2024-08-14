@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>APU FitNutri</title>
+    <link href="stylesign.css" rel="stylesheet" type="text/css">
+    <style>
+   
+    </style>
+</head>
+
+<body style="background-color:#f5f0ea">
+<header>
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="APUlogo.png">
+                    <a href="YuEn-homepagenewuser.html"><span>APU FitNutri</span></a>
+                </div>
+                <div class="nav-bar">
+                    <nav>
+                        <ul class="nav-menu">
+                            <li>
+                                <button>Fitness &amp; Exercise <i class="fa fa-caret-down"></i></button>
+                                <ul class="nav-submenu">
+                                    <li><a href="iris-workoutvideos.html">Workout Videos</a></li>
+                                    <li><a href="iris-workouttips.html">Workout Tips</a></li>
+                                    <li><a href="iris-eventclasses.html">Events and Classes</a></li>
+                                    <li><a href="iris-facilitiesandamenities.html">Facilities &amp; Amenities</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button>Nutrition <i class="fa fa-caret-down"></i></button>
+                                <ul class="nav-submenu">
+                                    <li><a href="sophenny-dietscategory.html">Diets Categories</a></li>
+                                    <li><a href="sophenny-healthydietmenu1.html">Healthy Eating</a></li>
+                                    <li><a href="sophenny-portioncontrol.html">Portion Control</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button>Community &amp; Support <i class="fa fa-caret-down"></i></button>
+                                <ul class="nav-submenu">
+                                    <li><a href="charlotte-discussionboard.html">Discussion Boards</a></li>
+                                    <li><a href="charlotte-newsupdates.html">News &amp; Updates</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sophenny-aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="YuEn-termsandcondition.html">More</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav-user">
+                    <div class="user-icon">
+                        <a href="charlotte-profile.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                        <div class="user-dropdown">
+                            <a href="YuEn-loginpage.html">Log In</a>
+                            <a href="YuEn-signpage.html">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <div class="container">
+        <form id="signupForm">
+            <h1>Welcome to APU FitNutri!</h1>
+            <h3>Designed specifically for APU students, wellness and fitness webpage, includes workout videos, diet recommendation, discussion boards, and many more...</h3>
+            <hr />
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <label>First Name</label>
+                <input class="input-field" type="text" placeholder="First Name" />
+                <br />
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <label>Last Name</label>
+                <input class="input-field" type="text" placeholder="Last Name" />
+                <br />
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <label>TP Number</label>
+                <input class="input-field" type="text" id="tpNumber" placeholder="TP Number" />
+                <br />
+                <span id="tpNumberError" class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <label>Email</label>
+                <input class="input-field" type="email" id="email" placeholder="Email Address" />
+                <br />
+                <span id="emailError" class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-calendar icon"></i>
+                <label for="dob">Date of Birth:</label>
+                <input class="input-field" type="date" id="dob" name="dob" required>
+                <br>
+            </div>
+
+            <p>* please select your date of birth, according to your Identity Card</p>
+
+            <div class="input-container">
+                <i class="fa fa-phone icon"></i>
+                <label for="phone">Contact Number:</label>
+                <input class="input-field" type="text" id="contactNumber" placeholder="Contact Number" required>
+                <br>
+                <span id="contactNumberError" class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-lock icon"></i>
+                <label>Password</label>
+                <input class="input-field" type="password" id="password" placeholder="Password" />
+                <br />
+                <span id="passwordError" class="error-message"></span>
+                <!-- Password strength meter -->
+                <div id="passwordStrength"></div>
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-lock icon"></i>
+                <label>Confirm your password</label>
+                <input class="input-field" type="password" id="confirmPassword" placeholder="Re-type password"
+                    style="margin-top: 5px" />
+                <br />
+                <span id="confirmPasswordError" class="error-message"></span>
+            </div>
+
+            <p>
+                By creating an account you agree to our <a href="YuEn-termsandcondition.html">Terms and Conditions</a>
+            </p>
+
+            <button class="registerbtn" type="submit"><a href="YuEn-homepagenewuser.html">Sign Up</a></button>
+
+            <div class="login">
+                <p>Already have an account?<a href="YuEn-loginpage.html">Login</a></p>
+                <p>Return to Fitness Nutricoach <a href="YuEn-homepagenewuser.html">Homepage</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer__bar">
+        <p> Copyright © 2024 APU FitNutri All rights reserved.</p>
+    </div>
+
+    <script>
+        // Get form and input fields
+        const signupForm = document.getElementById('signupForm');
+        const tpNumberInput = document.getElementById('tpNumber');
+        const emailInput = document.getElementById('email');
+        const contactNumberInput = document.getElementById('contactNumber');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirmPassword');
+
+        // Get error message elements
+        const tpNumberError = document.getElementById('tpNumberError');
+        const emailError = document.getElementById('emailError');
+        const contactNumberError = document.getElementById('contactNumberError');
+        const passwordError = document.getElementById('passwordError');
+        const confirmPasswordError = document.getElementById('confirmPasswordError');
+        const passwordStrength = document.getElementById('passwordStrength');
+
+        // Define validation patterns
+        const tpPattern = /^TP\d{6}$/;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const contactNumberPattern = /^[\d\s\+\-\(\)]+$/;
+        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+        // Function to update password strength meter
+        function updatePasswordStrength() {
+            const password = passwordInput.value;
+            let strength = 0;
+
+            if (password.length >= 8) {
+                strength += 1;
+            }
+
+            if (/[A-Z]/.test(password)) {
+                strength += 1;
+            }
+
+            if (/[a-z]/.test(password)) {
+                strength += 1;
+            }
+
+            if (/\d/.test(password)) {
+                strength += 1;
+            }
+
+            if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+                strength += 1;
+            }
+
+            if (strength === 0) {
+                passwordStrength.className = 'weak';
+            } else if (strength <= 2) {
+                passwordStrength.className = 'medium';
+            } else {
+                passwordStrength.className = 'strong';
+            }
+        }
+
+        // Event listeners for password input
+        passwordInput.addEventListener('input', updatePasswordStrength);
+        passwordInput.addEventListener('change', updatePasswordStrength);
+
+        // Validation function
+        function validateForm(event) {
+            let isValid = true;
+
+            if (!tpPattern.test(tpNumberInput.value)) {
+                tpNumberInput.classList.add('error');
+                tpNumberError.textContent = 'Invalid TP Number format, follow (TPXXXXXX) TP followed by 6 numbers';
+                tpNumberError.classList.add('show');
+                isValid = false;
+            } else {
+                tpNumberInput.classList.remove('error');
+                tpNumberError.textContent = '';
+                tpNumberError.classList.remove('show');
+            }
+
+            if (!emailPattern.test(emailInput.value)) {
+                emailInput.classList.add('error');
+                emailError.textContent = 'Invalid email address format. Must contain "@" and ".my" or ".com". No spaces allowed. ';
+                emailError.classList.add('show');
+                isValid = false;
+            } else {
+                emailInput.classList.remove('error');
+                emailError.textContent = '';
+                emailError.classList.remove('show');
+            }
+
+
+            if (!contactNumberPattern.test(contactNumberInput.value)) {
+                contactNumberInput.classList.add('error');
+                contactNumberError.textContent = 'Invalid contact number format. Numbers and symbol "+", "-", "(", ")" following country conventions are allowed.';
+                contactNumberError.classList.add('show');
+                isValid = false;
+            } else {
+                contactNumberInput.classList.remove('error');
+                contactNumberError.textContent = '';
+                contactNumberError.classList.remove('show');
+            }
+
+            if (!passwordPattern.test(passwordInput.value)) {
+                passwordInput.classList.add('error');
+                passwordError.textContent = 'Password must contain at least 8 characters, including AT LEAST 1 one uppercase letter, 1 lowercase letter, 1 number, and 1 special character.';
+                passwordError.classList.add('show');
+                isValid = false;
+            } else {
+                passwordInput.classList.remove('error');
+                passwordError.textContent = '';
+                passwordError.classList.remove('show');
+            }
+
+            if (confirmPasswordInput.value !== passwordInput.value) {
+                confirmPasswordInput.classList.add('error');
+                confirmPasswordError.textContent = 'Passwords do not match. Please re-enter';
+                confirmPasswordError.classList.add('show');
+                isValid = false;
+            } else {
+                confirmPasswordInput.classList.remove('error');
+                confirmPasswordError.textContent = '';
+                confirmPasswordError.classList.remove('show');
+            }
+
+            if (!isValid) {
+                event.preventDefault(); // Prevent form submission if there are validation errors
+            }
+        }
+
+        // Event listener for form submission
+        signupForm.addEventListener('submit', validateForm);
+    </script>
+</body>
+
+</html>
+
